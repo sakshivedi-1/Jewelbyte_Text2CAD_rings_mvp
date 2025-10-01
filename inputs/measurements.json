@@ -1,0 +1,10 @@
+{
+  "ring_size_us": "7",
+  "band_width_mm": 2.0,
+  "band_thickness_mm": 2,
+  "stone_diameter_mm": 6,
+  "stone_shape": "round",
+  "setting_type": "prong",
+  "prong_count": 4,
+  "band_profile": "D-Shape"
+}

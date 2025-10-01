@@ -1,0 +1,6 @@
+opencv-python
+numpy
+cadquery
+math
+json
+os

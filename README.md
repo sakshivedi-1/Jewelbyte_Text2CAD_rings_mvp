@@ -1,0 +1,1 @@
+# Jewelbyte_Text2CAD_rings_mvp
