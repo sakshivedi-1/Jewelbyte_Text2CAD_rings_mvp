@@ -16,25 +16,27 @@ Proof-of-Concept Sketch Analysis: Includes a function for basic image processing
 # Architecture
 The pipeline is designed with a simple, three-stage modular architecture. This separation of concerns allows for easy modification and scaling of any individual component without affecting the others.
 
-text-to-cad-ring/
+Jewelbytes_text2CAD_rings/
 │
-├── main.py                    # Orchestrator script that runs the pipeline
+├── main.py                     # Orchestrator script that runs the pipeline
 │
-├── data_ingestion/
-│   └── parser.py              # Handles reading and parsing all input files
+├── data_ingestion/             # Module: Handles input data
+│   └── parser.py               # Reads and parses all input files
 │
-├── geometry_generation/
-│   └── ring_generator.py      # The core engine; builds the 3D model using CadQuery
+├── geometry_generation/        # Module: Core CAD generation
+│   └── ring_generator.py       # Builds the 3D model using CadQuery
 │
-├── file_export/
-│   └── exporter.py            # Handles saving the final model to .stl and .step
+├── file_export/                # Module: Export utilities
+│   └── exporter.py             # Saves the final model to .stl and .step
 │
-├── inputs/
-│   ├── measurements.json      # Key parameters for the model
-│   ├── description.txt        # Natural language description (metadata)
-│   └── sketch.png             # 2D sketch for visual reference/guidance
+├── inputs/                     # Input files directory
+│   ├── measurements.json       # Key parameters (ring size, band width, stone dia)
+│   ├── description.txt         # Natural language description (metadata)
+│   └── sketch.png              # 2D sketch (hand-drawn / AI generated)
 │
-└── outputs/                   # Directory where final CAD files are saved
+└── outputs/                    # Output directory for final CAD files
+                                # (Generated .3dm / .stl / .step files)
+
 Data Ingestion: The parser.py module reads the measurements.json, description.txt, and sketch.png files from the /inputs directory.
 
 Geometry Generation: The ring_generator.py module takes the parsed measurements and uses the CadQuery library to parametrically construct the 3D geometry of the ring, stone, and prongs.
