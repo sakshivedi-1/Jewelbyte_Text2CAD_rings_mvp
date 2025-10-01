@@ -18,24 +18,24 @@ The pipeline is designed with a simple, three-stage modular architecture. This s
 
 Jewelbytes_text2CAD_rings/
 │
-├── main.py                     # Orchestrator script that runs the pipeline
+├── main.py # Orchestrator script that runs the pipeline
 │
-├── data_ingestion/             # Module: Handles input data
-│   └── parser.py               # Reads and parses all input files
+├── data_ingestion/ # Module: Handles input data
+│ └── parser.py # Reads and parses all input files
 │
-├── geometry_generation/        # Module: Core CAD generation
-│   └── ring_generator.py       # Builds the 3D model using CadQuery
+├── geometry_generation/ # Module: Core CAD generation
+│ └── ring_generator.py # Builds the 3D model using CadQuery
 │
-├── file_export/                # Module: Export utilities
-│   └── exporter.py             # Saves the final model to .stl and .step
+├── file_export/ # Module: Export utilities
+│ └── exporter.py # Saves the final model to .stl and .step
 │
-├── inputs/                     # Input files directory
-│   ├── measurements.json       # Key parameters (ring size, band width, stone dia)
-│   ├── description.txt         # Natural language description (metadata)
-│   └── sketch.png              # 2D sketch (hand-drawn / AI generated)
+├── inputs/ # Input files directory
+│ ├── measurements.json # Key parameters (ring size, band width, stone dia)
+│ ├── description.txt # Natural language description (metadata)
+│ └── sketch.png # 2D sketch (hand-drawn / AI generated)
 │
-└── outputs/                    # Output directory for final CAD files
-                                # (Generated .3dm / .stl / .step files)
+└── outputs/ # Output directory for final CAD files
+  #(Generated .3dm / .stl / .step files)
 
 Data Ingestion: The parser.py module reads the measurements.json, description.txt, and sketch.png files from the /inputs directory.
 
