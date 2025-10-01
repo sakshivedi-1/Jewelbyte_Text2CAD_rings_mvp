@@ -1,4 +1,4 @@
-# Jewelbyte_Text2CAD_rings_mvp
+# Jewelbyte_Text2CAD_rings
 This project is a functional prototype of a pipeline that converts a set of inputs—key measurements, a natural language description, and a 2D sketch—into a precise, manufacturable 3D CAD model of a solitaire ring. The pipeline is built with a focus on modularity, accuracy, and scalability.
 
 The final output consists of industry-standard .stl (for 3D printing) and .step (for high-fidelity CAD work) files that are dimensionally accurate and production-ready.
