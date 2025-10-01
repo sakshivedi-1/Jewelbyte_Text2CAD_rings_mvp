@@ -16,6 +16,7 @@ Proof-of-Concept Sketch Analysis: Includes a function for basic image processing
 # Architecture
 The pipeline is designed with a simple, three-stage modular architecture. This separation of concerns allows for easy modification and scaling of any individual component without affecting the others.
 
+```text
 Jewelbytes_text2CAD_rings/
 │
 ├── main.py # Orchestrator script that runs the pipeline
