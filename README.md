@@ -3,7 +3,7 @@ This project is a functional prototype of a pipeline that converts a set of inpu
 
 The final output consists of industry-standard .stl (for 3D printing) and .step (for high-fidelity CAD work) files that are dimensionally accurate and production-ready.
 
-Key Features
+# Key Features
 Parametric Generation: Automatically creates a 3D model based on precise measurements from a .json file.
 
 Modular Architecture: The code is cleanly separated into data ingestion, geometry generation, and file export stages, making it easy to maintain and extend.
@@ -12,7 +12,8 @@ Production-Ready Output: Generates watertight solid models in both STL and STEP 
 
 Proof-of-Concept Sketch Analysis: Includes a function for basic image processing of sketches using OpenCV.
 
-Architecture
+
+# Architecture
 The pipeline is designed with a simple, three-stage modular architecture. This separation of concerns allows for easy modification and scaling of any individual component without affecting the others.
 
 text-to-cad-ring/
@@ -40,7 +41,7 @@ Geometry Generation: The ring_generator.py module takes the parsed measurements 
 
 File Export: The exporter.py module receives the final 3D object from the generator and saves it in the /outputs directory.
 
-Technology Stack
+# Technology Stack
 Python 3: The core programming language.
 
 CadQuery: The primary library for parametric 3D CAD modeling.
@@ -123,7 +124,7 @@ STEP (.step): Chosen over Rhino's proprietary .3dm format because it is a univer
 
 STL (.stl): Included as it is the universal standard for 3D printing and mesh-based applications.
 
-Limitations & Future Work
+# Limitations & Future Work
 This prototype successfully lays the foundation for a more advanced system but has several limitations:
 
 Limited Geometry: The current version only generates a classic four-prong solitaire ring with a round stone.
