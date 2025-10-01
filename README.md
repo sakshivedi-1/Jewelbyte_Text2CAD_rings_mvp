@@ -37,6 +37,7 @@ Jewelbytes_text2CAD_rings/
 │
 └── outputs/ # Output directory for final CAD files
   #(Generated .3dm / .stl / .step files)
+  ```
 
 Data Ingestion: The parser.py module reads the measurements.json, description.txt, and sketch.png files from the /inputs directory.
 
